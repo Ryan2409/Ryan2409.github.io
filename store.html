@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Store</title>
-    <style>
-        
+    <title>Your Shoe Inspired Store</title>
+</head>
 
-        /* Additional styles */
+<!--Styling-->
+    <style>
+        body {
+            background-image: url('background.png'); /* Replace with your image URL */
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0%;
+            width: 100%;
+            min-height: 100%;
+        }
+        html {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+        }
         .search-banner {
             background-color: #35424a;
             color: white;
@@ -17,7 +31,16 @@
             justify-content: space-between;
             align-items: center;
         }
-
+        .shopping-cart {
+            display: flex;
+            align-items: center;
+        }
+        .cart-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 20%;
+        }
         .search-bar {
             flex: 1;
             max-width: 70%;
@@ -26,18 +49,42 @@
             border: none;
             border-radius: 20px;
         }
-
-        .shopping-cart {
+        .wrap {
+            height: 100%;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
-        .cart-icon {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+        .button {
+            min-width: 100px;
+            min-height: 60px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #d3d3d4;
+            background: #4FD1C5;
+            background: linear-gradient(90deg, rgb(57, 62, 62) 0%, rgb(71, 79, 78) 100%);
+            border: none;
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(217, 219, 219, 0.64);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            padding: 10px;
         }
-
+        .button:hover {
+            color: #eeeeee;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            margin: 10px 10px 10px;
+        }
         .categories {
             display: flex;
             justify-content: center;
@@ -55,35 +102,44 @@
         }
 
         .category:hover {
-            color: #ee4d2d;
+            color: #eeeeee;
         }
-    
+
+        .containerManager{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .product {
-            border: 1px solid #ccc;
+            border: 5px solid #ccc;
+            border-radius: 20%;
             margin: 10px;
             padding: 10px;
-            width: calc(48% - 20px); /* Adjust the width as needed */
+            width: 1000px; /* Adjust the width as needed */
+            height: 350px;
             background-color: rgb(94, 113, 182);
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
-
         .product img {
-            max-width: 100px;
-            height: 100px;
+            min-width: 250px;
+            max-height: 200px;
             display: block;
             margin: 0 auto 10px;
+            border-radius: 20%;
         }
-
         .product-details {
-            font-size: 12px;
+            font-size: auto;
         }
 
         .product-title {
             font-weight: bold;
+            font-size: large;
+            background-color: #d3d3d4;
+            padding: 3%;
+            border-radius: 20%;
+            text-align: center;
         }
 
         .product-price {
@@ -95,6 +151,7 @@
         .product-description {
             color: #1a1a1a;
         }
+
         .contact-banner {
             background-color: #35424a;
             color: white;
@@ -104,79 +161,77 @@
             bottom: 0;
             width: 100%;
         }
-
         .contact-details {
             font-size: 14px;
         }
-
         .store-address {
             margin-top: 10px;
         }
 
-        body {
-            background-image: url('image/background.png'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0%;
-            width: 100%;
-            min-height: 100%;
-        }
-        html {
-            margin: 0px;
-            height: 100%;
-            width: 100%;
-        }
-
-        .real-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        
     </style>
-</head>
 <body>
+
+    <!--Top Section-->
     <div class="search-banner">
         <div class="shopping-cart">
-            <img class="cart-icon" src="image/orangeCart.png" alt="Shopping Cart">
-            <button>Cart</button>
+            <img class="cart-icon" src="orangeCart.png" alt="Shopping Cart">
+            <div class="wrap">
+                <button class="button">Checkout</button>
+            </div>
+                <img class="logo" src="rainbow-running-shoes.gif">
         </div>
+        
         <input class="search-bar" type="text" placeholder="Search for products...">
     </div>
+
+    <!--Categories-->
     <div class="categories">
         <div class="category">Running</div>
         <div class="category">Formal</div>
         <div class="category">Casual</div>
         <div class="category">Sneakers</div>
-        <!-- Add more categories here -->
-
     </div>
-    <div class="real-container">
-        <div class="container">
+
+    <!--Containers-->
+    <div class="containerManager">
             <div class="product">
-                <img src="image/shoe.jpg" alt="Product 1">
+                <img src="shoe.jpg" alt="Product 1">
                 <div class="product-details">
                     <div class="product-title">Blue Shoe</div>
                     <div class="product-price">$29.99</div>
                     <div class="product-description">Blue Coloured shoes just for you</div>
                 </div>
             </div>
-        </div>
     
-        <div class="container">
             <div class="product">
-                <img src="image/shoe2.jpg" alt="Product 1">
+                <img src="shoe2.jpg" alt="Product 2">
                 <div class="product-details">
                     <div class="product-title">Running Shoe</div>
-                    <div class="product-price">$29.99</div>
+                    <div class="product-price">$299.99</div>
                     <div class="product-description">Running shoes just for you</div>
                 </div>
             </div>
-        </div>
+
+            <div class="product">
+                <img src="nikeBlue.webp" alt="Product 3">
+                <div class="product-details">
+                    <div class="product-title">Running Shoe</div>
+                    <div class="product-price">$2.99</div>
+                    <div class="product-description">Another Blue shoes just for you</div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="addidas.avif" alt="Product 4">
+                <div class="product-details">
+                    <div class="product-title">Running Shoe</div>
+                    <div class="product-price">$9.99</div>
+                    <div class="product-description">White shoes just for you</div>
+                </div>
+            </div>
+            
     </div>
-    
+    <!--Bottom Banner-->
     <div class="contact-banner">
         <div class="contact-details">
             For inquiries, please contact us at:
@@ -186,10 +241,9 @@
         <div class="store-address">
             Store Address: 1234 Pasir Ris, Singapore, Singpaore
         </div>
-        <footer>
-            &copy; 2023 Your Shoe Inspired Store. All rights reserved.
-        </footer>
+
+             2023 Your Shoe Inspired Store. All rights reserved.
+       
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <style>
+        /* Reset default styles ... */
+
+        /* Additional styles */
+        .search-banner {
+            background-color: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .shopping-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+            padding: 10px 0;
+        }
+
+        .category {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #444;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .category:hover {
+            color: #ee4d2d;
+        }
+        
+        .product img {
+            max-width: 50%; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        
+
+        .product {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            width: calc(48% - 20px); /* Adjust the width as needed */
+            background-color: rgb(94, 113, 182);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product img {
+            max-width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .product-details {
+            font-size: 12px;
+        }
+
+        .product-title {
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #000000;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .product-description {
+            color: #1a1a1a;
+        }
+        .contact-banner {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-details {
+            font-size: 14px;
+        }
+
+        .store-address {
+            margin-top: 10px;
+        }
+
+        body {
+            background-image: url('background.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .real-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ... Rest of your CSS ... */
+    </style>
+</head>
+<body>
+    <div class="search-banner">
+        <div class="shopping-cart">
+            <img class="cart-icon" src="orangeCart.png" alt="Shopping Cart">
+            <button>Cart</button>
+        </div>
+        <input class="search-bar" type="text" placeholder="Search for products...">
+    </div>
+    <div class="categories">
+        <div class="category">Running</div>
+        <div class="category">Formal</div>
+        <div class="category">Casual</div>
+        <div class="category">Sneakers</div>
+        <!-- Add more categories here -->
+    </div>
+    <div class="real-container">
+        <div class="container">
+            <div class="product">
+                <img src="shoe.jpg" alt="Product 1">
+                <div class="product-details">
+                    <div class="product-title">Blue Shoe</div>
+                    <div class="product-price">$29.99</div>
+                    <div class="product-description">Blue Coloured shoes just for you</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="product">
+                <img src="shoe2.jpg" alt="Product 1">
+                <div class="product-details">
+                    <div class="product-title">Running Shoe</div>
+                    <div class="product-price">$29.99</div>
+                    <div class="product-description">Running shoes just for you</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-banner">
+        <div class="contact-details">
+            For inquiries, please contact us at:
+            <br>
+            Email: ShoesForYou@yahoo.com | Phone: (123) 456-7890
+        </div>
+        <div class="store-address">
+            Store Address: 1234 Pasir Ris, Singapore, Singpaore
+        </div>
+        <footer>
+            &copy; 2023 Your Shoe Inspired Store. All rights reserved.
+        </footer>
+    </div>
+    
+</body>
+</html>

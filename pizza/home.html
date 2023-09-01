@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Papa Johns</title>
+</head>
+<body>
+
+    
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <!-- Main NAV Bar -->
+          <a class="navbar-brand" href="#">
+
+          <img src="images/pizza_logo.png" alt="Logo" width="30%" height="25px" class="d-inline-block align-text-top">
+          Welcome To PapaJohns</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- Title -->
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PapaJohns</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                <!-- Home -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- Order PapaJohns -->
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.papajohns.com/">Order Papa John's</a>
+                </li>
+
+                <!-- SOcial Media Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Social Medias
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.facebook.com/papajohnsus/">Papa John's Facebook</a></li>
+                    <li><a class="dropdown-item" href="https://twitter.com/papajohns">Papa John's Twitter</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Search Bar -->
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- IG post -->
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <div class="card mb-3 text-bg-success mb-3" style="margin-top: 100px; ">
+                <img src="images/pizza_pepperoni.jpeg" class="card-img-top" alt="Pizza">
+                <div class="card-body">
+                <h5 class="card-title">Papa John's pizza with pepperoni and black olives</h5>
+                <p class="card-text">Nothing better than PapaJohns</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Summary</h5>
+            <p class="card-text">Papa John's is an American pizza restaurant franchise. It is the fourth largest pizza delivery restaurant chain in the United States with headquarters in Jeffersontown, Kentucky, a suburb of Louisville.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">History</h5>
+            <p class="card-text">The Papa John's restaurant was founded in 1984 when "Papa" John Schnatter knocked out a broom closet in the back of his father's tavern, Mick's Lounge, in Jeffersonville, Indiana. He then sold his 1971 Camaro Z28 to purchase US$1,600 worth of used pizza equipment and began selling pizzas to the tavern's customers out of the converted closet. His pizzas proved sufficiently popular that a year later he moved into an adjoining space. Dipping sauce specifically for pizza was invented by Papa John's Pizza that same year, and has since become popular when eating pizza, especially the crust. The company went public in 1993. A year later it had 500 stores, and by 1997 it had opened 1,500 stores. In 2009, Schnatter reacquired the Camaro back after offering a reward of $250,000 for the car.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Operations</h5>
+            <p class="card-text">Papa John's has over 5,199 establishments — 4,456 franchised restaurants operating domestically in all 50 states and in 44 countries and territories. Papa John's operates 246 "company owned stores" under joint ventures and 35 units in Beijing and North China. In September 2012 the 4,000th Papa John's Pizza restaurant opened, in New Hyde Park, New York. The company celebrated the event by giving away 4,000 free pizzas to customers throughout New York City.</p>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Media Coverage</h5>
+              <p class="card-text">Papa John's received attention in May 2008 when a Washington, D.C. franchise distributed T-shirts making fun of Cleveland Cavaliers star player LeBron James at a playoff game against the Washington Wizards. Photographs of the shirts quickly spread from the Internet to Cleveland television. Increasing awareness of the controversy prompted an apology from the Papa John's national headquarters on May 5. To apologize, Papa John's offered large single-topping pizzas for 23 cents (matching James' jersey number) at all locations in Greater Cleveland and throughout northern Ohio. The chain sold over 172,000 pizzas at 23 cents a piece, with customers waiting in lines outside of some stores for as long as three hours.</p>
+            </div>
+          </div>
+      </div>
+
+    <!-- Bootstrap JS Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

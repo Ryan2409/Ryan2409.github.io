@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi I'm Ryan Ng</title>
 
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
     <!--internal styling-->
     <style>
         body {
@@ -192,13 +196,48 @@
     </header>
 
     <!--Navigation Bar-->
-    <nav id="navigation-bar">
+    <!-- <nav id="navigation-bar">
         <div class="box">
             <ul>
                 <li><a href="#biography">About me</a></li>
                 <li><a href="#addinfo">Introducing Labuan Bajo</a></li>
                 <li><a href="#main-footer">Contact me</a></li>
             </ul>
+        </div>
+    </nav> -->
+    
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome To Paradise</a>
+
+            <!--Navbar Button itself-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsed Nav Bar and links -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#biography">About me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#addinfo">Introducing Labuan Bajo</a>
+                    </li>
+              
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-footer">Contact me</a>
+                    </li>
+                </ul>
+
+            <!--Search Bar-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
     <!--Labuan Bajo Picture in Background with content-->
@@ -234,5 +273,8 @@
         <h1>Contact Me!</h1>
         <p>+65 9999 9999</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -111,30 +111,6 @@
         100%  {color: var(--color-1)}
         }
 
-        
-        /* Biography section */
-        
-        #biography {
-            float: left;
-            width: 70%;
-            padding: 0 30px;
-            box-sizing: border-box;
-            border: solid green;
-            background-color: whitesmoke;
-            
-        }
-
-        /* additional info section */
-        #addinfo {
-            float: right;
-            width: 30%;
-            background-color: rgb(139, 185, 112);
-            color: white;
-            padding: 10px;
-            box-sizing: border-box;
-            text-align: center;
-            /* height: 606px; */
-        }
         /* code for addinfo and biography */
         @media(max-width: 600px) {
             #biography {
@@ -216,7 +192,7 @@
             <div class="card">
                 <img src="resume/images/Ryan_photo.jfif" class="card-img-top" alt="RyanPhoto">
                 <div class="card-body">
-                <h5 class="card-title">About Me</h5>
+                <h5 class="card-title" id="biography">About Me</h5>
                 <p class="card-text">Im a 22 year old SMU student studying IS. I was born in Singapore and currently reside there. I enjoy travelling and find great joy in living life to the fullest</p>
                 </div>
             </div>
@@ -226,27 +202,13 @@
             <div class="card">
                 <img src="image/Labuan_Bajo,_a_port_in_West_Flores,_Nusa_Tenggara,_Indonesia;_January_2020.jpg" class="card-img-top" alt="Labuan Bajo">
                 <div class="card-body">
-                <h5 class="card-title">Labuan Bajo</h5>
+                <h5 class="card-title" id="addinfo">Labuan Bajo</h5>
                 <p class="card-text">Once a small fishing village, Labuan Bajo (also spelled Labuhanbajo and Labuanbajo) is now a tourist center as well as a centre of government for the surrounding region. Best known for Komodo Island, Pink Beach and the beauty of the destination!</p>
                 </div>
             </div>
         </div>
 
       </div>
-
-    <div class="box">
-    <!--biography-->
-        <section id="biography">
-            <img src="resume/images/Ryan_photo.jfif" style="max-width:100%; max-height: 15%; min-width: 100%; min-height: 400%; border-radius: 50%;">
-            <h1>About Me</h1>
-            <p>Im a 22 year old SMU student studying IS. I was born in Singapore and currently reside there. I enjoy travelling and find great joy in living life to the fullest</p>
-        </section>
-    <!--additional content-->
-        <section id="addinfo">
-            <h1>Labuan Bajo</h1>
-            <p>Once a small fishing village, Labuan Bajo (also spelled Labuhanbajo and Labuanbajo) is now a tourist center as well as a centre of government for the surrounding region. Best known for Komodo Island, Pink Beach and the beauty of the destination!</p>
-        </section>
-    </div>
 
     <!--Footer(Contact me)-->
     <footer id="main-footer">
